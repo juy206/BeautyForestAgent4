@@ -60,6 +60,35 @@ namespace BeautyForestAgent
             FormMemo m = new FormMemo();
             m.ShowDialog();
         }
+
+        private void FormBeauty_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnModify_Click(object sender, EventArgs e)
+        {
+            FormModify m = new FormModify();
+            m.ShowDialog();
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            FormAdd m = new FormAdd();
+            m.ShowDialog();
+        }
+
+        private void 수정ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormModify m = new FormModify();
+            m.ShowDialog();
+        }
+
+        private void 추가ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAdd m = new FormAdd();
+            m.ShowDialog();
+        }
     }
 
 }

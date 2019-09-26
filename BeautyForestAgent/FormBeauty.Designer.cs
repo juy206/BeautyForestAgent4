@@ -64,7 +64,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(466, 14);
             this.label1.TabIndex = 1;
-            this.label1.Text = "(주)미림스쿨 - Beauty Forest Agent v0.4 by [학번] [이름]";
+            this.label1.Text = "(주)미림스쿨 - Beauty Forest Agent v0.4 by 3614 정준명";
             // 
             // btnTray
             // 
@@ -86,6 +86,7 @@
             this.btnModify.TabIndex = 3;
             this.btnModify.Text = "수정";
             this.btnModify.UseVisualStyleBackColor = false;
+            this.btnModify.Click += new System.EventHandler(this.BtnModify_Click);
             // 
             // btnAdd
             // 
@@ -96,6 +97,7 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // pictureBox1
             // 
@@ -192,7 +194,7 @@
             // 끝내기ToolStripMenuItem1
             // 
             this.끝내기ToolStripMenuItem1.Name = "끝내기ToolStripMenuItem1";
-            this.끝내기ToolStripMenuItem1.Size = new System.Drawing.Size(110, 22);
+            this.끝내기ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.끝내기ToolStripMenuItem1.Text = "끝내기";
             this.끝내기ToolStripMenuItem1.Click += new System.EventHandler(this.끝내기ToolStripMenuItem1_Click);
             // 
@@ -208,14 +210,16 @@
             // 수정ToolStripMenuItem
             // 
             this.수정ToolStripMenuItem.Name = "수정ToolStripMenuItem";
-            this.수정ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.수정ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.수정ToolStripMenuItem.Text = "수정";
+            this.수정ToolStripMenuItem.Click += new System.EventHandler(this.수정ToolStripMenuItem_Click);
             // 
             // 추가ToolStripMenuItem
             // 
             this.추가ToolStripMenuItem.Name = "추가ToolStripMenuItem";
-            this.추가ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.추가ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.추가ToolStripMenuItem.Text = "추가";
+            this.추가ToolStripMenuItem.Click += new System.EventHandler(this.추가ToolStripMenuItem_Click);
             // 
             // 도움말ToolStripMenuItem
             // 
@@ -228,7 +232,7 @@
             // 이프로그램은ToolStripMenuItem
             // 
             this.이프로그램은ToolStripMenuItem.Name = "이프로그램은ToolStripMenuItem";
-            this.이프로그램은ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.이프로그램은ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.이프로그램은ToolStripMenuItem.Text = "이 프로그램은";
             // 
             // 건의사항ToolStripMenuItem
@@ -262,8 +266,9 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormBeauty";
-            this.Text = "Beauty Forest Agent v0.4 by [학번] [이름]";
+            this.Text = "Beauty Forest Agent v0.4 by 3614 정준명";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.FormBeauty_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.cmsMenu.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
