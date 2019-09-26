@@ -77,7 +77,7 @@ namespace BeautyForestAgent
             FormAdd m = new FormAdd();
             m.ShowDialog();
         }
-
+         
         private void 수정ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormModify m = new FormModify();
